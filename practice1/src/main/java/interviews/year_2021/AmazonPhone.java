@@ -1,4 +1,4 @@
-package main.java;
+package main.java.interviews.year_2021;
 
 import java.util.*;
 
@@ -24,6 +24,7 @@ public class AmazonPhone {
         return offers;
     }
 }
+
 class Offer{
     String sellerName;
     double cost;
@@ -41,21 +42,25 @@ class Offer{
         return "sellerName:" + sellerName + " cost:" + cost + " shippingCost:" + shippingCost + " rating:" + rating;
     }
 }
+
 class RatingComparator implements Comparator<Offer> {
     public int compare(Offer o1, Offer o2) {
         return (int)( o2.rating - o1.rating);
     }
 }
+
 class CostComparator implements Comparator<Offer> {
     public int compare(Offer o1, Offer o2) {
         return (int)( o1.cost - o2.cost);
     }
 }
+
 class ShippingCostComparator implements Comparator<Offer> {
     public int compare(Offer o1, Offer o2) {
         return (int)( (o1.cost+o1.shippingCost) - (o2.cost + o2.shippingCost));
     }
 }
+
 class OfferChainedComparator implements Comparator<Offer> {
 
     private List<Comparator<Offer>> listComparators;
