@@ -1,4 +1,4 @@
-package main.java.design;
+package main.java.ds.design;
 
 import java.util.*;
 import static main.java.common.Util.print;

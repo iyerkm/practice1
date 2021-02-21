@@ -1,4 +1,4 @@
-package main.java.design;
+package main.java.ds.design;
 
 import java.util.HashMap;
 import java.util.Map;
