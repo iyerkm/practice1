@@ -130,6 +130,30 @@ public class UberOA2021 {
         return count;
     }
 
+    /*
+    Question 1:
+        input1: ababab
+        input2: cdcdcd
+        output: acbdacbd
+
+    Question 2:
+        reverse the number and sum them up
+        5000 --> 0005 --> 5000
+        123 --> 321
+
+    Question 3:
+        Board of characters. Lke the brick game, let them fall.
+        * means the shape
+        . means empty space
+        # means obstacle
+        Count of the number of moves to have the shape reach the bottom
+    Question 4:
+        booleanDeque(int n, String[] operations)
+        operations: [L,L, C2, L, C3]
+        If L: set the earliest index containing zero to 1.
+        If C2: Set the index 2 to zero
+        Return the binary string
+     */
 
 }
 
